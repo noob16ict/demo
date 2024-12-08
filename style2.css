@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding:0;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    padding-top: 15dvh;
+}
+.upperSec{
+    height: 15vh;
+    width: 100%;
+    background: radial-gradient(rgb(1, 84, 91),rgb(2, 56, 76));
+    box-sizing: border-box;
+    padding: 2.0vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top:0;
+}
+.upperSec p{
+    font-size: 3.4rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+.lowerSec{
+    height:100% ;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    isolation: isolate;
+    gap: 2rem;
+}
+.lowerSec::before{
+    background-image: url('campus.jpg');
+    content: "";
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.80;
+}
+.caution{
+    padding-top: 1rem;
+    text-align: center;
+    width: 100%;
+    isolation: isolate;
+    box-sizing: border-box;
+}
+.caution p{
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card{
+    border: 0.3rem solid rgb(100, 195, 243);
+    height: 50vw;
+    width: 50vw; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding:3rem;
+}
+.f{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.left{
+    height: 100%;
+    width: 30%; 
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 1vw;
+}
+.left p{
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+.right{
+    height: 100%;
+    width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:1vw;
+}
+.nameInput{
+    border:0.2rem solid rgb(3, 129, 148);
+    border-radius: 1.5rem ;
+    background: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 1rem;
+    height: 80%;
+    width: 28vw;
+    color:rgb(255, 255, 255);  
+    text-align: center; 
+    font-size: 2.2rem;
+}
+.nameInput::placeholder{
+   color:rgb(241, 241, 241);
+   font-size: 2.2rem;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+.nameInput:focus{
+    border:none;
+    border-radius: 0rem;
+    border-bottom: 0.15rem dotted rgb(212, 187, 187);
+    font-size: 2.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;    
+}
+.selectDiv{
+    border-radius: 1rem;
+    height: 100%;
+    width: 28dvw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background:rgb(1, 83, 83);
+}
+.drop{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 1rem; 
+    background:none;
+    position: relative;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.3rem;
+    text-align: center; 
+    
+}
+.drop:focus {
+    text-align: left;  
+}
+option{
+    background-color: rgb(3, 83, 80);
+    color: rgb(247, 244, 244);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9rem;
+}
+textarea{
+    height: 100%;
+    width: 28dvw;
+    border-radius: 1rem;
+    background: none;
+    box-sizing: border-box;
+    border:0.2rem solid rgb(3, 129, 148);
+    padding: 0.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+textarea:focus{
+    background:radial-gradient(rgb(1, 66, 66),rgb(4, 126, 192)) ;
+    color: white;   
+}
+.btn{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 2dvw;
+    isolation: isolate; 
+    
+
+}
+button{
+    height: 100%;
+    width: 8vw;
+    background: linear-gradient(rgb(1, 68, 68),rgb(7, 148, 209));
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    border: 0.1rem solid white;
+    border-radius: 1rem;
+}
+@media (max-width:1500px) {
+    body{
+        padding-top: 12dvh;
+    }
+    .upperSec{
+        height: 12vh;
+        
+    }
+    .upperSec p{
+        font-size: 1.8rem;
+    }
+    .lowerSec{
+        gap:1rem;
+    }
+    .caution{
+        padding-top: 0.5rem;
+    }
+    .caution p{
+        font-size: 1.5rem;
+    }
+    .card{
+        border: 0.2rem solid rgb(100, 195, 243);
+        height: 50vw;
+        width: 50vw; 
+        padding:2rem;
+    }
+    .lowerSec::before{
+        height: 200dvh;
+
+    }
+
+    .left p{
+        font-size: 1.5rem;
+    }
+
+    .nameInput{
+
+        font-size: 1.5rem;
+    }
+    .nameInput::placeholder{
+       font-size: 1.5rem;
+    }
+    .nameInput:focus{
+        font-size: 1.4rem;   
+    }
+    .selectDiv{
+        width: 24dvw;
+    }
+    .drop{
+        font-size: 1.4rem; 
+    }
+    .drop:focus {
+        text-align: left;  
+    }
+    option{
+        background-color: rgb(3, 83, 80);
+        color: rgb(247, 244, 244);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 0.8rem;
+    }
+    textarea{
+        height: 100%;
+        width: 24dvw;
+        font-size: 1.5rem;
+        color: rgb(0, 0, 0);
+    }
+
+    .btn{
+        height: 10vh;
+    }
+    button{
+        height: 100%;
+        width: 8vw;
+        font-size: 1.4rem;
+
+    }
+}
+@media (max-width:1100px) {
+
+    .upperSec p{
+        font-size: 1.3rem;
+    }
+    .lowerSec{
+        gap:1rem;
+    }
+    .caution{
+        padding-top: 0.5rem;
+    }
+    .caution p{
+        font-size: 1.3rem;
+    }
+
+    .left p{
+        font-size: 1.2rem;
+    }
+    .lowerSec::before{
+        height: 200dvh;
+        background-image: url('campus.jpg');
+        background-image: url('campus.jpg');
+        content: "";
+        top:0;
+        left: 0;
+
+    }
+    .nameInput{
+        font-size: 1.2rem;
+    }
+    .nameInput::placeholder{
+       font-size: 1.2rem;
+    }
+    .nameInput:focus{
+        font-size: 1.2rem;   
+    }
+    .selectDiv{
+        width: 24dvw;
+    }
+    .drop{
+        font-size: 1.1rem; 
+    }
+    .drop:focus {
+        text-align: left;  
+    }
+    option{
+        font-size: 0.8rem;
+    }
+    textarea{
+        font-size: 1.2rem;
+    }
+
+    .btn{
+        height: 10vh;
+    }
+    button{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:850px) {
+
+    .upperSec p{
+        font-size: 1.3rem;
+    }
+    .lowerSec{
+        gap:1rem;
+    }
+    .caution{
+        padding-top: 0.3rem;
+    }
+    .caution p{
+        font-size: 1rem;
+    }
+    .card{
+        height:60vw;
+        width:60vw;
+        gap:0.2rem;
+        padding:0.1rem;
+    }
+    .left p{
+        font-size: 1rem;
+    }
+    .lowerSec::before{
+        height: 200dvh;
+        background-image: url('campus.jpg');
+        background-image: url('campus.jpg');
+        content: "";
+        top:0;
+        left: 0;
+
+    }
+    .nameInput{
+        font-size: 1rem;
+    }
+    .nameInput::placeholder{
+       font-size: 1rem;
+    }
+    .nameInput:focus{
+        font-size: 1rem;   
+    }
+    .selectDiv{
+        width: 24dvw;
+    }
+    .drop{
+        font-size: 1rem; 
+    }
+    .drop:focus {
+        text-align: left;  
+    }
+    option{
+        font-size: 0.6rem;
+    }
+    textarea{
+        font-size: 1rem;
+    }
+
+    .btn{
+        height: 10vh;
+    }
+    button{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width:500px) {
+    .lowerSec::before{
+        height: 200dvh;
+        background-image: url('campus.jpg');
+        background-image: url('campus.jpg');
+        content: "";
+        top:0;
+        left: 0;
+
+    }
+    .upperSec p{
+        font-size: 0.8rem;
+    }
+    .lowerSec{
+        gap:0.8rem;
+    }
+    .caution{
+        padding-top: 0.3rem;
+    }
+    .caution p{
+        font-size: 0.8rem;
+    }
+    .card{
+        height:100vw;
+        width:70vw;
+
+    }
+    .left p{
+        font-size: 0.8rem;
+    }
+
+    .nameInput{
+        font-size: 0.8rem;
+        width: 35dvw;
+    }
+    .nameInput::placeholder{
+       font-size: 0.8rem;
+    }
+    .nameInput:focus{
+        font-size: 0.8rem;   
+    }
+    .selectDiv{
+        width: 32dvw;
+    }
+    .drop{
+        font-size: 0.8rem; 
+    }
+    .drop:focus {
+        text-align: left;  
+    }
+    option{
+        font-size: 0.4rem;
+    }
+    textarea{
+        font-size: 0.8rem;
+        width: 32dvw;
+    }
+
+    .btn{
+        height: 10vh;
+        
+    }
+    button{
+        font-size: 0.7rem;
+        width: 15dvw;
+    }
+}
+@media (max-width:350px) {
+    .upperSec p{
+        font-size: 0.8rem;
+    }
+    .lowerSec{
+        gap:0.2rem;
+    }
+    .caution{
+        padding-top: 0.3rem;
+    }
+    .caution p{
+        font-size: 0.8rem;
+    }
+    .card{
+       height: 110vw;
+       width: 90vw;
+    }
+    .left p{
+        font-size: 0.7rem;
+    }
+    .nameInput{
+        font-size: 0.7rem;
+        width: 100%;
+    }
+    .nameInput::placeholder{
+       font-size: 0.7rem;
+    }
+    .nameInput:focus{
+        font-size: 0.7rem;   
+    }
+    .selectDiv{
+        width:100%;
+    }
+    .drop{
+        font-size: 0.7rem; 
+    }
+    option{
+        font-size: 0.7rem;
+    }
+    textarea{
+        width: 100%;
+        font-size: 0.7rem;
+    }
+    .btn{
+        height: 10vh;   
+    }
+    button{
+        font-size: 0.5rem;
+        width: 18dvw;
+    }
+}

@@ -1,0 +1,929 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+ body{
+    height: 100%;
+    width: 100%;
+    padding-top: 2rem;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-top: 8rem;
+
+}
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 0.8rem;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(rgb(1, 56, 69),rgb(74, 214, 214)) ;
+    border-radius:0.2rem ;
+}
+.logo{
+    height: 3.8rem;
+    width: 3.8rem;
+    background-image: url('couLogo.jpeg');
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+.name{
+    height: 80%;
+    width: 13vw;
+}
+.p1{
+   font-size: 1.6rem;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+   font-weight:bolder ; 
+   color:white;
+}
+.p2{
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+ }
+.upper{
+    height: 10rem;
+    width: 100%;
+    background-color: rgb(5, 150, 160);
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top:0
+}
+.rightUpper{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    gap:2rem;
+    margin-right: 1rem;
+}
+
+.rightUpper a:hover{
+    color: rgb(6, 5, 5);
+}
+.leftUpper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    box-sizing: border-box;
+    gap:0.6rem;
+    margin-left: 0.8rem;
+}
+.middle{
+    height: 80rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap; 
+    
+    position: relative;
+}
+.middle::before{
+    background-image: url('couImage.jpg');
+    background-size: cover;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    opacity: 0.75;
+}
+.rightMidHolder{
+    height: 100%;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 4rem;
+}
+.rightMid{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.5rem solid rgb(251, 245, 245);
+    align-items: center;
+    justify-items: center;
+    overflow-y: scroll;
+}
+.rightMid::-webkit-scrollbar{
+    display: none;
+}
+.leftMid{
+    height: 100%;
+    width: 70%;
+    box-sizing: border-box;
+    border: 1rem solid rgb(248, 247, 247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    
+}
+ .leftMidUpper{
+    height: 10%;
+    width: 100%;
+    border-bottom:0.2rem solid rgb(30, 29, 29);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    box-sizing: border-box;
+    padding: 1rem;  
+    isolation: isolate;    
+}
+.leftMidUpper p{
+    font-size: 3.1rem;
+    color:rgb(10, 0, 0);
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+.leftMidLower{
+    height: 90%;
+    width: 100%; 
+    box-sizing: border-box;
+    /* padding: 1rem; */
+    isolation: isolate;
+}
+
+.leftMidLowerUp{
+    height: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    isolation: isolate;
+    overflow-y: scroll;  
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.leftMidLowerUp p{
+    font-size: 2.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+.leftMidLowerUp:hover{
+    background:linear-gradient(rgb(0, 54, 54),rgb(10, 149, 156)); 
+}
+.leftMidLowerUp:hover p{
+    color: rgb(242, 236, 236);
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.0rem;
+}
+.leftMidLowerDw{
+    height: 50%;
+    width: 100%;
+    isolation: isolate;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+.leftMidLowerDwUp{
+    height: 15%;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 0.2rem solid black;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 1rem;
+}
+.leftMidLowerDwUp p{
+    font-size: 2.8rem;
+    color:rgb(10, 0, 0);
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.leftMidLowerDwDw{
+    height: 85%;
+    width: 100%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    gap:1.5rem;
+}
+.cardRect{
+    height: 6rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.8rem;
+    background:linear-gradient(white,rgb(123, 124, 124));
+    color: rgb(7, 7, 7);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    isolation: isolate;
+}
+.cardRect p{
+    font-size:1.6rem ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bolder ;   
+}
+.card{
+  height:33vw ;
+  width: 100%;
+  box-sizing: border-box;
+  border:0.4rem solid rgb(105, 232, 246);
+  border-radius: 8rem;
+  padding:1.5rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:0.5rem;
+  isolation: isolate;
+  margin-bottom: 0.5rem;
+}
+.photo{
+    height: 60%;
+    width: 70%; 
+    background-size: cover;
+    border-radius: 50%;
+    border: 0.3rem solid rgb(227, 245, 248);  
+}
+.dp1{
+    background-image: url('chuppu.jpg');
+}
+.dp2{
+    background-image: url('vc.jpg');
+}
+.dp3{
+    background-image: url('pro vs.jpg');
+}
+.dp4{
+    background-image: url('treasurer.jpg');
+}
+.dp5{
+    background-image: url('registrar.jpeg');
+}
+.about{
+    height: 30%;
+    width: 100%;
+    border-radius: 10rem;
+    background:linear-gradient(rgb(1, 54, 54),rgb(7, 196, 225));
+    box-sizing: border-box;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about h3{
+    font-size: 1.4vw;
+    color: rgb(238, 240, 241);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.about p{
+    font-size: 1.6vw;
+    color: rgb(250, 253, 253);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.lower{
+    height:15rem;
+    width: 100%;
+    background:radial-gradient(rgb(0, 53, 53),rgb(10, 86, 90));
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.lower p{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+@media (max-width:1600px) {
+
+    .logo{
+        height: 2.9rem;
+        width: 2.9rem;    
+    }
+    .p1{
+       font-size: 1.0rem;
+    }
+    .p2{
+        font-size: 0.9rem;
+    }
+    .upper{
+        height: 5rem;
+    }
+    .leftUpper{
+        padding: 0rem;
+        margin-left: 1rem;
+    }
+    .main{
+        padding-top: 1rem;
+    }
+    .leftMidUpper p{
+        font-size: 1.3rem;
+    }
+
+    .leftMidLowerUp p{
+        font-size: 1.2rem;
+    }
+    .leftMidLowerUp:hover p{
+        font-size: 1.2rem;
+    }
+    .leftMidLowerDwUp p{
+        font-size: 1.4rem;
+    }
+
+    .middle{
+        height: 60rem;
+    }
+    .cardRect{
+        height: 3.2rem;
+    }
+    .cardRect p{
+        font-size:1rem ;
+        
+    }
+    .about h3{
+        font-size: 1.2vw;
+        text-align: center;
+    }
+    .about p{
+        font-size: 1.2vw;
+        text-align: center;
+    }
+    .lower{
+        height: 8rem;
+    }
+    .lower p{
+        font-size: 1.2rem;
+    }  
+    .card{
+        height:24w ;
+        width: 100%;
+        border:0.2rem solid rgb(105, 232, 246);
+        border-radius: 4rem;
+        padding:0.5rem;
+        gap:0.2rem;
+        margin-bottom: 0.5rem;
+      }
+      .photo{
+          height: 60%;
+          width: 70%; 
+          border: 0.1rem solid rgb(227, 245, 248);  
+      }
+      .about{
+        height: 30%;
+        width: 100%;
+        border-radius: 5rem;
+        padding: 1.5rem;
+        
+    }
+    .leftMid{
+        width: 60%;
+
+    }
+    .rightMidHolder{
+        width: 40%;
+    }
+}
+@media (max-width:1100px) {
+    .logo{
+        height: 2.3rem;
+        width: 2.3rem;    
+    }
+
+    .p1{
+       font-size: 0.9rem;
+    }
+    .p2{
+        font-size: 0.7rem;
+     }
+    .upper{
+        height: 5rem;
+    }
+  
+    .middle{
+        height:40rem;
+    }
+    .leftMidUpper p{
+        font-size: 1.5rem;
+    }
+    .leftMidLowerUp p{
+        font-size: 1rem;
+    }
+    .leftMidLowerUp:hover p{
+        font-size: 1rem;
+    }
+    .leftMidLowerUp{
+        padding: 1rem;
+
+    }
+    .leftMidLowerDwUp p{
+        font-size: 1.3rem;
+    }
+    .leftMidLowerDwDw{
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        gap: 0.3rem;
+    }
+    .cardRect p{
+        font-size: 0.7rem;
+        font-weight: lighter;
+    }
+    .cardRect{
+        height: 1.8rem;
+    }
+    .lower{
+        height:5rem;
+    }
+    .lower p{
+        font-size: 0.8rem;
+    }
+    .photo{
+        height: 65%;
+        width: 70%;
+    }
+    .leftMid{
+       width: 60%;
+    }
+    .rightMidHolder{
+        width: 40%;
+    }
+    .about{
+        height: 30%;
+    }
+    .about p{
+        font-size: 1.0rem;
+    }
+    .middle{
+        height: 200dvh;
+    }
+}
+
+@media (max-width:900px) {
+    .middle::before{
+        background-image: url('campus2.jpg');
+        background-size: cover;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        content: "";
+        position: absolute;
+        opacity: 0.75;
+    }
+    .upper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+        gap:0.5rem;
+        box-sizing: border-box;
+        padding: 0.2rem;
+    }
+    .rightUpper{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap:0.5rem;
+       width: 100%;
+    }
+    .leftUpper{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:0;
+        padding: 0;
+        width: 100%;
+        gap:0.4rem;
+    }
+
+    .logo{
+        height: 1.3rem;
+        width: 1.3rem;
+        
+    }
+    .name{
+      
+      padding:0;
+      margin: 0;
+      width: 7rem;
+      flex-direction: column;
+     
+        }
+    .p1{
+        font-size: 0.6rem;
+        text-align: left;
+    }
+    .p2{
+        font-size: 0.5rem;
+        text-align: left;
+    }
+    .middle{
+        height: 200dvh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        gap:0;
+
+    }
+    .leftMid{
+        height: 50%;
+        width: 100%;
+    }
+    .rightMidHolder{
+        height: 50%;
+        width: 100%;
+    }
+    .leftMidUpper{
+        height: 10%;
+    }
+    .leftMidLower{
+        height: 90%;
+    }
+    .leftMidUpper p{
+        font-size: 0.8rem;
+    }
+    .leftMidLowerUp p{
+       font-size: 0.6rem;
+    }
+    .leftMidLowerUp:hover p{
+        font-size: 0.6rem;
+    }
+    .leftMidLowerDwUp p{
+        font-size: 0.8rem;
+    }
+    .leftMidLowerDwDw{
+        padding:1rem;
+    }
+    .cardRect{
+        height: 4rem;
+    }
+    .cardRect p{
+        font-size: 0.65rem;
+        font-weight: lighter;
+    }
+    .rightMidHolder{
+        padding: 0rem;
+    }
+    .rightMid{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100%;
+        padding: 0.1rem;
+        gap:1.3rem;
+    }
+    .card{
+        height:15rem;
+        width:15rem;
+        gap:0rem;
+        padding:0.2rem;
+    }
+    .photo{
+        height:50%;
+        width:50%;
+    }
+    .about{
+        height: 3rem;
+        width: 9rem;
+    }
+    .about h3{
+        font-size:0.6rem;
+    }
+    .about p{
+        font-size: 0.6rem;
+    }
+    .lower{
+        height: 20dvh;
+    }
+    .lower p{
+        font-size: 0.65rem;
+    }
+}
+ @media (max-width:600px) {
+    .upper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        gap:0.5rem;
+        box-sizing: border-box;
+        padding: 0.2rem;
+    }
+    .leftUpper{
+        
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        gap:0;
+        padding: 0;
+        width: 100%;
+        
+    }
+    .rightUpper{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap:0.8rem;
+    }
+  
+
+    .logo{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .name{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .p1{
+        font-size: 0.7rem;
+    }
+    .p2{
+        font-size: 0.5rem;
+    }
+    .middle{
+        height: 200dvh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        gap:0;
+
+    }
+    .leftMid{
+        height: 50%;
+        width: 100%;
+    }
+    .rightMidHolder{
+        height: 50%;
+        width: 100%;
+    }
+    .leftMidUpper{
+        height: 10%;
+    }
+    .leftMidLower{
+        height: 90%;
+    }
+    .leftMidUpper p{
+        font-size: 1rem;
+    }
+    .leftMidLowerUp p{
+       font-size: 0.8rem;
+    }
+    .leftMidLowerUp:hover p{
+        font-size: 0.8rem;
+    }
+    .leftMidLowerDwUp p{
+        font-size: 1rem;
+    }
+    .leftMidLowerDwDw{
+        padding:1rem;
+    }
+    .cardRect{
+        height: 3.5rem;
+    }
+    .cardRect p{
+        font-size: .8rem;
+        font-weight: lighter;
+    }
+    .rightMidHolder{
+        padding: 0rem;
+    }
+    .rightMid{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100%;
+        padding: 0.1rem;
+        gap:1.3rem;
+    }
+    .card{
+        height:15rem;
+        width:15rem;
+        gap:0rem;
+        padding:0.2rem;
+    }
+    .photo{
+        height:50%;
+        width:50%;
+    }
+    .about{
+        height: 3rem;
+        width: 9rem;
+    }
+    .about h3{
+        font-size:0.6rem;
+    }
+    .about p{
+        font-size: 0.6rem;
+    }
+    .lower{
+        height: 20dvh;
+    }
+    .lower p{
+        font-size: 0.8rem;
+    }
+    .middle::before{
+        background-image: url('campus2.jpg');
+        background-size: cover;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        content: "";
+        position: absolute;
+        opacity: 0.75;
+    }
+}
+@media (max-width:450px) {
+    .leftUpper{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:0;
+        padding: 0;
+        width: 100%;
+        gap:0.1rem;
+    }
+    .upper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+        gap:0.5rem;
+        box-sizing: border-box;
+        padding: 0.2rem;
+        
+    }
+    .rightUpper{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap:0.5rem;
+    }
+    .leftUpper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo{
+        height: 1.7rem;
+        width: 1.7rem;  
+    }
+    .name{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding:0;
+      margin: 0;
+      
+        }
+    .p1{
+        font-size: 0.8rem;
+        margin-left:0 ;
+    }
+    .p2{
+        font-size: 0.6rem;
+        margin-left: 0;
+    }
+    .middle{
+        height: 200dvh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        gap:0;
+
+    }
+    .leftMid{
+        height: 50%;
+        width: 100%;
+    }
+    .rightMidHolder{
+        height: 50%;
+        width: 100%;
+    }
+    .leftMidUpper{
+        height: 10%;
+    }
+    .leftMidLower{
+        height: 90%;
+    }
+    .leftMidUpper p{
+        font-size: 0.9rem;
+    }
+    .leftMidLowerUp p{
+       font-size: 0.8rem;
+    }
+    .leftMidLowerUp:hover p{
+        font-size: 0.6rem;
+    }
+    .leftMidLowerDwUp p{
+        font-size: 0.95rem;
+    }
+    .leftMidLowerDwDw{
+        padding:1rem;
+    }
+    .cardRect{
+        height: 4rem;
+    }
+    .cardRect p{
+        font-size: 0.9rem;
+        font-weight: lighter;
+    }
+    .rightMidHolder{
+        padding: 0rem;
+    }
+    .rightMid{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0.1rem;
+        gap:1.3rem;
+    }
+    .card{
+        height:70%;
+        width:80%;
+        padding:0.2rem;
+    }
+    .photo{
+        height:40%;
+        width:60%;
+    }
+    .about{
+        height: 5rem;
+        width: 15rem;
+    }
+    .about h3{
+        font-size:0.95rem;
+    }
+    .about p{
+        font-size: 0.9rem;
+    }
+    .lower{
+        height: 23dvh;
+    }
+    .lower p{
+        font-size: 0.9rem;
+    }
+
+    .middle::before{
+        background-image: url('campus2.jpg');
+        background-size: cover;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        content: "";
+        position: absolute;
+        opacity: 0.75;
+    }
+}
+  
