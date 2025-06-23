@@ -1,1 +1,1 @@
-# demo
+A static page made with only html and css. this is not properly responsive. 
